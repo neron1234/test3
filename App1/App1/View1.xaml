@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.View1"
+             xmlns:local="clr-namespace:App1;assembly=App1"           
+             >
+  <ContentView.Content>
+        <!--<ScrollView>
+            <StackLayout Padding="10" Orientation="Vertical">
+                <local:QRScanner x:Name="qrScanner"/>
+            </StackLayout>
+
+        </ScrollView>-->
+        <StackLayout Spacing="10">
+            <Button Text="Click"  
+                x:Name="btnScan"  
+                Clicked="btnScan_Clicked"/>
+            <Entry x:Name="txtBarcode"  
+               Placeholder="Text Do scan"/>
+        </StackLayout>
+    </ContentView.Content>
+</ContentView>

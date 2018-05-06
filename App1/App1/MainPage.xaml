@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:App1"
+             xmlns:cv="clr-namespace:CarouselView.FormsPlugin.Abstractions;assembly=CarouselView.FormsPlugin.Abstractions"         
+             x:Class="App1.MainPage"
+            xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms">
+    
+    <cv:CarouselViewControl x:Name="carousel"
+        ItemsSource="{Binding MyItemsSource}"
+        ShowArrows="true"
+        ShowIndicators="true"
+        BackgroundColor="#2F4393"     
+        CurrentPageIndicatorTintColor="White"
+        PositionSelectedCommand="{Binding MyCommand}"
+        PositionSelected="Handle_PositionSelected"
+        Scrolled="Handle_Scrolled"
+        Orientation="Horizontal">
+
+    </cv:CarouselViewControl>
+
+
+</ContentPage>
